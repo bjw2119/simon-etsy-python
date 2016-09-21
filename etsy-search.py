@@ -12,7 +12,6 @@ def make_results(data):
     masterDescription = []
     
     for listing in data['results']:
-        #listings.append({'title': listing['title'], 'description': listing['description']})
         masterDescription = transform_text(listing['description'], masterDescription)
         masterTitle = transform_text(listing['title'], masterTitle)
     
